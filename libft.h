@@ -77,9 +77,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
-
 /*		Get_next_line		*/
-
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
@@ -94,17 +92,16 @@ char	*ft_strndup(char *str, int len);
 char	*ft_strnjoin(char *dst, char *src);
 
 /*		Printf				*/
-
-int	ft_printf(const char *str, ...);
-int	ft_format(char *tmp, va_list args);
+int		ft_printf(const char *str, ...);
+int		ft_format(char *tmp, va_list args);
 
 //Utility
-int	ft_print_s(va_list args, int len);
-int	ft_print_d(va_list args, int len);
-int	ft_print_u(va_list args, int len);
-int	ft_print_p(va_list args, int len);
-int	ft_print_x(va_list args, int len);
-int	ft_print_upperx(va_list args, int len);
+int		ft_print_s(va_list args, int len);
+int		ft_print_d(va_list args, int len);
+int		ft_print_u(va_list args, int len);
+int		ft_print_p(va_list args, int len);
+int		ft_print_x(va_list args, int len);
+int		ft_print_upperx(va_list args, int len);
 
 //extra
 int		ft_putstr(char *s);
@@ -113,7 +110,5 @@ char	*ft_utoa(unsigned int n);
 char	*ft_htoa(unsigned int n);
 char	*ft_address(unsigned long n);
 char	*ft_toupper_h(char *str);
-
-
 
 #endif

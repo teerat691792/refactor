@@ -76,7 +76,8 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || fd > FOPEN_MAX || BUFFER_SIZE < 1)
 		return (NULL);
-	if ((nl = ft_find_newline(collector[fd]))> 0)
+	nl = ft_find_newline(collector[fd]);
+	if (nl > 0)
 	{
 		result = ft_line_return(collector[fd], nl);
 		collector[fd] = ft_trim_remain(collector[fd], nl);
